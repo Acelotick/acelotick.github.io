@@ -47,5 +47,24 @@ body {
 
 .minioffset {
     position: relative;
-    padding: 5px;
+    padding: 3px;
+}
+
+.normoffset {
+    position: relative;
+    padding: 12px;
+}
+
+.kdpcont {
+    display: flex;
+    align-items: center;
+    padding-bottom: 4%
+}
+.kdpimgcont {
+    max-width: 100px;
+    height: auto;
+    margin-right: 20px;
+}
+.kdptxtcont {
+    text-align: center;
 }
