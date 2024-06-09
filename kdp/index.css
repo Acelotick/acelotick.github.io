@@ -1,0 +1,17 @@
+@font-face {
+    font-family: 'cnd';
+    src: url('../fonts/cannonade.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'cndbold';
+    src: url('../fonts/cannonade-bold.ttf') format('truetype');
+}
+
+.cndbold {
+    font-family: 'cndbold';
+}
+
+.cnd {
+    font-family: 'cnd';
+}
