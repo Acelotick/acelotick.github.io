@@ -29,10 +29,11 @@ body {
     background-image: url('./bg.jpg');
     background-position: center;
     background-repeat: no-repeat;
-    width: auto;
-    height: auto;
+    background-size: cover;
     margin: 20px;
     padding: 0;
+    scroll-behavior: smooth; /* Добавляем плавный скролл */
+    scroll-padding: 50px; /* Отступы от краев окна браузера */
 }
 
 * {
@@ -60,11 +61,47 @@ body {
     align-items: center;
     padding-bottom: 4%
 }
+
 .kdpimgcont {
     max-width: 100px;
     height: auto;
     margin-right: 20px;
 }
+
 .kdptxtcont {
     text-align: center;
+}
+
+::-webkit-scrollbar {
+    width: 18px;
+}
+
+::-webkit-scrollbar-button {
+    background-color: #ccc;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+}
+
+::-webkit-scrollbar-corner {
+    background-color: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 1px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #777;
+}
+
+::-webkit-scrollbar-thumb:active {
+    background-color: #877;
+}
+
+::-webkit-scrollbar-button:start, 
+::-webkit-scrollbar-button:end {
+    display: none;
 }
