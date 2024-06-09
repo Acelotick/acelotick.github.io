@@ -26,14 +26,14 @@ li {
 }
 
 body {
-    background-image: url('./bg.jpg');
-    background-position: center;
+    background: linear-gradient(180deg, black 10%, #560095, #8aa5b4, black);
+    background-color: #000;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100% 100%;
     margin: 20px;
     padding: 0;
-    scroll-behavior: smooth; /* Добавляем плавный скролл */
-    scroll-padding: 50px; /* Отступы от краев окна браузера */
+    scroll-behavior: smooth;
+    scroll-padding: 50px;
 }
 
 * {
