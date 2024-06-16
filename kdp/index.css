@@ -80,10 +80,7 @@ body {
     margin-right: 20px;
 }
 
-::-webkit-scrollbar-button:start, 
-::-webkit-scrollbar-button:end {
-    display: none;
-}
+
 
 .kdptxtcont {
     text-align: center;
