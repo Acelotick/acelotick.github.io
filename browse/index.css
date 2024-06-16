@@ -14,6 +14,7 @@ body, html {
 * {
     margin: 0;
     padding-left: 0.6vw;
+    padding-right: 0.6vw;
     padding-top: 0.4vh
 }
 
