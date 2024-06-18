@@ -1,11 +1,11 @@
 @font-face {
     font-family: 'cnd';
-    src: url('../fonts/cannonade.ttf') format('truetype');
+    src: url('./fonts/cnd.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'cndbold';
-    src: url('../fonts/cannonade-bold.ttf') format('truetype');
+    src: url('./fonts/cndb.ttf') format('truetype');
 }
 
 .cndbold {
@@ -36,7 +36,7 @@ html::after {
 }
 
 body {
-    background-image: url('./bg.jpg');
+    background-image: url('./photos/bg.jpg');
     background-color: #000;
     background-repeat: no-repeat;
     background-position-x: 25%;
@@ -79,8 +79,6 @@ body {
     height: auto;
     margin-right: 20px;
 }
-
-
 
 .kdptxtcont {
     text-align: center;

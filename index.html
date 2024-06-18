@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Камура Acelotick'а</title>
+    <link rel="icon" type="image/jpeg" href="./photos/icon.jpg">
+    <link rel="apple-touch-icon" href="./photos/icon.jpg">
+    <meta name="description" content="На данном сайте что только не находится..">
+    <meta name="keywords" content="Камура, acelotick, acelotick'а, acelotick'a, камура ацелота, камура ацелотика, камура acelotick">
+
+    <meta property="og:title" content="Камура Acelotick'а">
+    <meta property="og:description" content="На данном сайте что только не находится..">
+    <meta property="og:image" content="./photos/icon.jpg">
+    <meta property="og:url" content="https://t.me/acelotick">
+    <meta property="og:type" content="website">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Камура Acelotick'а">
+    <meta name="twitter:description" content="На данном сайте что только не находится..">
+    <meta name="twitter:image" content="./photos/icon.jpg">
+</head>
+<style>
+    @font-face { font-family: 'nt'; src: url('./fonts/nt.ttf') format('opentype') }
+    .fnt { font-family: 'nt', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif }
+    @font-face { font-family: 'ntm'; src: url('./fonts/ntm.ttf') format('opentype') }
+    .fntm { font-family: 'ntm', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif }
+    @font-face { font-family: 'ntb'; src: url('./fonts/ntb.ttf') format('opentype') }
+    .fntb { font-family: 'ntb', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif }
+</style>
+<style>
+    body, html {
+        margin: 0;
+        padding: 0;
+        padding-left: 1vw;
+        border: none;
+        font-size: 20px;
+        scroll-behavior: smooth;
+        scroll-padding: 50px
+    }
+
+    html { background-color: #181818 }
+
+    * {
+        margin: 0;
+        padding-left: 0.6vw;
+        padding-right: 0.6vw;
+        padding-top: 0.4vh;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none
+    }
+
+    .offset { position: relative; margin: 25px }
+
+    ::-webkit-scrollbar { width: 10px }
+    
+    ::-webkit-scrollbar-corner { background-color: #f1f1f1 }
+
+    ::-webkit-scrollbar-thumb { background-color: #cccccc; border-radius: 4px }
+
+    ::-webkit-scrollbar-thumb:hover { background-color: #999999 }
+
+    ::-webkit-scrollbar-thumb:active { background-color: #888888 }
+
+    ::-webkit-scrollbar-button:start, ::-webkit-scrollbar-button:end { display: none }
+
+    a {
+        color: #00cc99;
+        padding: 0;
+        padding-left: 0.2vw
+    }
+
+    a:hover { color: #009977 }
+
+    a:visited { color: #66ffcc }
+
+    a:visited:hover { color: #00d7a8 }
+
+    p { color: #e0e0e0 }
+
+    .bigt { font-size: 38px; margin-left: -1vw }
+
+    footer { padding: 0 }
+</style>
+<body>
+    <header>
+        <p class="fntb bigt">Приветствую на моём сайте</p>
+    </header>
+    <main>
+        <p class="fntm">Мои сообщества: <a href="./pages/kdp/index.html">Код да проги</a>.</p>
+        <p class="fntm">Эта страница - твой проводник на мои сайты, следуй дальше.</p>
+        <p class="offset"></p>
+        <section>
+            <p class="fntb bigt">Проекты</p>
+            <p class="fntm">У меня много проектов, и наверняка ты найдешь что-то интересное для себя:</p>
+            <p class="fntm"><a href="./pages/github/nodejs/index.html">Node.JS Программы</a></p>
+            <p class="fntm"><a href="./pages/github/batch/index.html">Пакетные файлы</a></p>
+            <p class="fntm"><a href="./pages/github/magisk/index.html">Модули Magisk</a></p>
+        </section>
+        <p class="offset"></p>
+        <section>
+            <p class="fntb bigt">Социальные сети</p>
+            <p class="fntm">Здесь ты можешь написать мне, чаще всего я в Telegram:</p>
+            <p class="fntm"><a href="https://t.me/acelotick">Telegram</a> / <a href="https://discord.com/">Discord</a> / <a href="https://vk.com/vitaliikarpov">ВКонтакте</a></p>
+        </section>
+        <p class="offset"></p>
+    </main>
+    <footer>
+        <p class="fntm">© 2024 Acelotick. Все права защищены.</p>
+        <p class="fntm"><a id="fun-fact" onclick="generate()">Нажмите что-бы сгенерировать забавный факт.</a></p>
+    </footer>
+</body>
+<script>
+    let facts = [
+        "В Австралии существует больше овец, чем людей.",
+        "Человеческий нос может запомнить до 50,000 различных запахов.",
+        "Страусы могут бегать быстрее, чем лошади.",
+        "Медведи коалы спят около 22 часов в день.",
+        "Сердце креветки находится в её голове.",
+        "Пчелы никогда не спят.",
+        "Осьминоги имеют три сердца.",
+        "В Японии больше домашних животных, чем детей.",
+        "Коты не могут чувствовать сладкий вкус.",
+        "Космонавты на МКС видят восход и закат 16 раз в день.",
+        "У акулы больше костей в её коже, чем в скелете.",
+        "Кенгуру не умеют ходить назад.",
+        "Зебры - дальтоники.",
+        "Пингвины не умеют летать, но они отличные пловцы.",
+        "В Китае есть 56 различных этнических групп.",
+        "Каждый день 20 тысяч человек имеют день рождения.",
+        "На Юпитере и Сатурне идут дожди из алмазов.",
+        "Самый старый из известных золотых рыбок прожил 43 года.",
+        "Улитка может спать до трех лет.",
+        "Человеческое тело содержит примерно 100 тысяч километров кровеносных сосудов.",
+        "Пингвины предлагают камни своим партнерам в знак любви.",
+        "Медузы существуют более 650 миллионов лет.",
+        "Шоколад был использован в качестве валюты у ацтеков.",
+        "У коров есть лучшие друзья, и они становятся беспокойными, когда их разделяют.",
+        "Перо страуса весит больше, чем его мозг.",
+        "Утконос откладывает яйца, но кормит детенышей молоком.",
+        "В Италии есть фонтан, из которого течет красное вино.",
+        "Клещи могут жить до 18 лет.",
+        "На Марсе закаты кажутся синими из-за его атмосферы.",
+        "Бананы радиоактивны из-за содержания калия.",
+        "Каждую секунду молния ударяет землю около 100 раз.",
+        "Слово 'сельдерей' происходит от греческого слова, означающего 'петрушка'.",
+        "Панды едят сидя, как люди.",
+        "Мозг человека примерно на 75% состоит из воды.",
+        "Коровы могут подниматься по лестнице, но не могут спускаться.",
+        "У осьминогов нет костей, поэтому они могут пролезть через очень узкие отверстия.",
+        "Древние египтяне использовали крокодиловый навоз в качестве контрацептива.",
+        "В Древнем Риме люди чистили зубы мочой.",
+        "Земля вращается со скоростью около 1670 километров в час.",
+        "Коровы производят больше молока, когда слушают музыку.",
+        "Реки на Титане (спутник Сатурна) текут метаном, а не водой.",
+        "Сом может 'гулять' по суше, используя свои плавники как ноги.",
+        "В Германии есть сауна в виде аэропланов.",
+        "Самка гориллы может родить только одного детеныша раз в четыре года.",
+        "Существуют рыбы, которые могут летать.",
+        "В Саудовской Аравии нет ни одной реки.",
+        "Каждый человек в среднем за свою жизнь производит около 25,000 литров слюны.",
+        "У звезд морских ежей есть глаза на кончиках своих щупалец.",
+        "Страусы могут жить до 75 лет.",
+        "Существуют грибы, которые светятся в темноте."
+    ]
+    let n = 0
+    let d = 0
+    let generate = () => {
+        let fact = document.getElementById('fun-fact')
+        if (n == 0 && n < 5) {
+            fact.textContent = 'Забавный факт загружается..'
+            setTimeout(() => {
+                fact.textContent = facts[Number((Math.random() * facts.length).toFixed(0))] ?? 'Ошибка при генерации, тебе повезло!'
+                d++
+            }, 500)
+            n++
+        } else if (n > 5 && n <= 8) {
+            fact.textContent = 'Перестаньте кликать на меня!'
+        } else if (n > 8 && n <= 10) {
+            fact.textContent = 'Так и быть, я сдаюсь!'
+        } else if (n > 10) {
+            fact.style.display = 'none'
+        }
+        if (d) n++
+    }
+</script>
+</html>
