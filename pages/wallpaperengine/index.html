@@ -38,7 +38,7 @@
     }
 
     html {
-        background: linear-gradient(to top, #202020 50%, #3d3d3d);
+        background: #3d3d3d;
         background-size: 100vw 200vh;
     }
 
@@ -78,11 +78,17 @@
         box-shadow: 10px 10px 20px rgba(0, 10, 0, 0.5);
         margin-top: 20px;
         margin-right: 20px;
+        transition: all ease-in-out 0.1s;
+        filter: blur(0.2px)
     }
 
     .proj:hover {
         scale: 0.99;
-        transition: all ease-in-out 0.1s;
+        filter: brightness(95%) blur(0px);
+    }
+
+    .proj:active {
+        filter: blur(0) brightness(90%)
     }
 
     @media (orientation: portrait) {
@@ -108,7 +114,7 @@
         <img src="./photos/Wallpaper Engine.png" onclick="window.location.href='https://github.com/Acelotick/acelotick.github.io/raw/main/pages/wallpaperengine/files/Wallpaper%20Engine.zip'" alt="download wallpaper engine crack" class="proj">
         <img src="./photos/4.png" onclick="d('4.zip')" alt="clock with car, japanese style" class="proj">
         <img src="./photos/2.png" onclick="d('2.zip')" alt="picachu with digital clock, centered" class="proj">
-        <img src="./photos/WEGuide.jpg" onclick="" alt="guide how to change wallpaper to custom on wallpaper engine" class="proj">
+        <img src="./photos/WEGuide.jpg" onclick="window.location.href='./guide/index.html'" alt="guide how to change wallpaper to custom on wallpaper engine" class="proj">
         <img src="./photos/5.png" onclick="d('5.zip')" alt="women on car with clock" class="proj">
         <img src="./photos/1.png" onclick="d('1.zip')" alt="gray windows with digital clock" class="proj">
         <img src="./photos/3.png" onclick="d('3.zip')" alt="digital clock on mars wallpaper" class="proj">
@@ -120,13 +126,6 @@
     <p style="padding-top: 10px"></p>
 </body>
 <script>
-    let d = (file) => {
-        let a = document.createElement('a')
-        a.href = './files/' + file
-        a.download = file
-        document.body.appendChild(a)
-        a.click()
-        document.body.removeChild(a)
-    }
+    let d=(file)=>{let a=document.createElement('a');a.href='./files/'+file;a.download=file;document.body.appendChild(a);a.click();document.body.removeChild(a)}
 </script>
 </html>
