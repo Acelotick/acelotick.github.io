@@ -1,1 +1,127 @@
-wallpaper engine projects (soon)
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Данный сайт - Проводник по кануре acelotick'а">
+    <meta name="keywords" content="канура, канур, проводник, аселотиск, программирование, красивый сайт, сайт, гитхаб, предпросмотр, nodejs, node js, NodeJS, css, js, mjs, cjs, next, acelotick, acelotick'а, acelotick'a, канура ацелота, канура ацелотика, Канура acelotick, проводника acelotick, ацеглотик, аселотика, проводник acelotick, провод ацелота, проводник acelotick'а">
+    <meta name="robots" content="index, follow">
+    
+    <title>Проекты для Wallpaper Engine</title>
+    <link rel="icon" type="image/png" href="../photos/icon1.png">
+    <link rel="apple-touch-icon" href="../photos/icon1.png">
+
+    <meta property="og:title" content="Стороняя ссылка с переходника Acelotick'а">
+    <meta property="og:description" content="Данная ссылка взята из проводника Acelotick'а">
+    <meta property="og:url" content="https://t.me/acelotick">
+    <meta property="og:type" content="website">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Стороняя ссылка с переходника Acelotick'а">
+    <meta name="twitter:description" content="Данная ссылка взята из проводника Acelotick'а">
+</head>
+<style>
+    @font-face { font-family: 'nt'; src: url('../../fonts/nt.ttf') format('opentype') }
+
+    .nt {
+        font-family: 'nt', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 19px;
+    }
+    
+    @font-face { font-family: 'ntb'; src: url('../../fonts/ntb.ttf') format('opentype') }
+
+    .ntb {
+        font-family: 'ntb', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 25px;
+    }
+
+    html {
+        background: linear-gradient(to top, #202020 50%, #3d3d3d);
+        background-size: 100vw 200vh;
+    }
+
+    body {
+        margin: 2%
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+        color: #f1f1f1;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none
+    }
+
+    .ob {
+        padding-top: 30px;
+    }
+
+    .om {
+        padding-top: 20px;
+    }
+
+    ::-webkit-scrollbar { width: 10px }
+    ::-webkit-scrollbar-corner { background-color: #f1f1f1 }
+    ::-webkit-scrollbar-thumb { background-color: #cccccc; border-radius: 4px }
+    ::-webkit-scrollbar-thumb:hover { background-color: #999999 }
+    ::-webkit-scrollbar-thumb:active { background-color: #888888 }
+    ::-webkit-scrollbar-button:start, ::-webkit-scrollbar-button:end { display: none }
+
+    .proj {
+        width: 40%;
+        border-radius: 3%;
+        background-image: url('./photos/1.png');
+        box-shadow: 10px 10px 20px rgba(0, 10, 0, 0.5);
+        margin-top: 20px;
+        margin-right: 20px;
+    }
+
+    .proj:hover {
+        scale: 0.99;
+        transition: all ease-in-out 0.1s;
+    }
+
+    @media (orientation: portrait) {
+        .proj {
+            width: 95%;
+            display: block;
+            margin-left: 2.3%
+        }
+        .c {
+            padding-left: 2px;
+        }
+    }
+
+    .nline {
+        display: inline-block;
+    }
+</style>
+<body>
+    <p class="ntb">Обои для Wallpaper Engine от автора Acelotick</p>
+    <p class="nt">Для скачивания, выберите обои, и нажмите на них</p>
+    <p style="padding-top: 20px"></p>
+    <div class="divproj">
+        <img src="./photos/Wallpaper Engine.png" onclick="d('Wallpaper Engine.zip')" alt="skakhat wallpaper engine crack" class="proj">
+        <img src="./photos/1.png" onclick="d('1.zip')" alt="project digital clock on windows wallpaper" class="proj">
+        <img src="./photos/2.png" onclick="d('2.zip')" alt="picachu with digital clock, centered" class="proj">
+        <img src="./photos/3.png" onclick="d('3.zip')" alt="digital clock on mars wallpaper" class="proj">
+    </div>
+    <p style="padding-top: 30px"></p>
+    <footer>
+        <p class="nt c">© 2024 Acelotick. Все права защищены.</p>
+    </footer>
+    <p style="padding-top: 20px"></p>
+</body>
+<script>
+    let d = (file) => {
+        let a = document.createElement('a')
+        a.href = './files/' + file
+        a.download = file
+        document.body.appendChild(a)
+        a.click()
+        document.body.removeChild(a)
+    }
+</script>
+</html>

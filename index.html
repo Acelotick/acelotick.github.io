@@ -54,13 +54,19 @@
         user-select: none
     }
 
-    .offset { position: relative; margin: 25px }
+    .offset { 
+        position: relative; 
+        margin: 25px 
+    }
 
     ::-webkit-scrollbar { width: 10px }
     
     ::-webkit-scrollbar-corner { background-color: #f1f1f1 }
 
-    ::-webkit-scrollbar-thumb { background-color: #cccccc; border-radius: 4px }
+    ::-webkit-scrollbar-thumb { 
+        background-color: #cccccc; 
+        border-radius: 4px 
+    }
 
     ::-webkit-scrollbar-thumb:hover { background-color: #999999 }
 
@@ -114,6 +120,7 @@
         <p class="fntm">© 2024 Acelotick. Все права защищены.</p>
         <p class="fntm"><a id="fun-fact" onclick="generate()">Нажмите что-бы сгенерировать забавный факт.</a></p>
     </footer>
+    <p class="offset"></p>
 </body>
 <script>
     let facts = [
