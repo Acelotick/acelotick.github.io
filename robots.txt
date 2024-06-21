@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: ./xmls/sitemap.xml
+Sitemap: acelotick.github.io/xmls/sitemap.xml
