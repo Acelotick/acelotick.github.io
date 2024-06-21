@@ -1,0 +1,13 @@
+{
+    "version": "1.0",
+    "api_version": "1.0",
+    "layout": {
+        "logo": {
+            "url": "./icons/icon.jpg",
+            "color":"#ffffff",
+            "show_title":true
+        },
+        "color":"#ffffff",
+        "show_title":true
+    }
+}
