@@ -140,29 +140,40 @@
         font-family: 'cndbold';
         src: url('../../kdp/fonts/cndb.ttf') format('truetype')
     }
+
+    a {
+        text-decoration: none;
+        color: #a4ffed
+    }
 </style>
 <body>
     <div class="main">
         <footer class="cndb">Модули Magisk'а на любой вкус и цвет</footer>
         <p class="cnd">Ну здравствуй, данное место, как-бы сказать, тут ты найдёшь модули для твоего рутированного устройства android который использует magisk, на любой вкус, цвет, оттенок и прозрачность, есть также модули от автора, только фаворитные и проверенные</p>
         <p class="ofb"></p>
-        <p class="cnm b">Думаю, можно начать с модулей, сделанных автором Acelotick, погнали</p>
+        <p class="cnm b">Думаю, можно начать с модулей, сделанных пользователем Acelotick</p>
         <p class="of"></p>
-        <p class="cnm c">Исправление лагов Youtube при 480p и выше</p>
-        <p class="cnm c">Ускоряем тач скрин одним модулем</p>
-        <p class="cnm c">Делаем качество камеры выше и заметнее</p>
-        <p class="cnm c">Включаем поддержку Gemini для старых huawei</p>
-        <p class="cnm c">Ускорение загрузки в систему</p>
+        <p class="cnm c" onclick="d('youtube-fix.zip')"><a href>Исправление лагов Youtube при 480p и выше</a></p>
+        <p class="cnm c" onclick="d('touch-boost.zip')"><a href>Ускоряем тач скрин одним модулем</a></p>
+        <p class="cnm c" onclick="d('camera-better.zip')"><a href>Делаем качество камеры выше и заметнее</a></p>
+        <p class="cnm c" onclick="d('gemini-support.zip')"><a href>Включаем поддержку Gemini для старых huawei</a></p>
+        <p class="cnm c" onclick="d('fast-booting.zip')"><a href>Ускорение загрузки в систему</a></p>
         <p class="ofm"></p>
         <p class="cndb">Списки</p>
-        <p class="cnd">Изменение бренда телефона</p>
-        <p class="cnd">Изменение модели</p>
-        <p class="cnd">Меняем регион SIM-Карты</p>
+        <p class="cnd"><a href="./changebrand/index.html">Изменение бренда телефона</a></p>
+        <p class="cnd"><a href="./changemodel/index.html">Изменение модели</a></p>
+        <p class="cnd"><a href="./changeregion/index.html">Меняем регион SIM-Карты</a></p>
         <p class="ofm"></p>
         <p class="cnm b">Продолжим с другими модулями, не от автора</p>
         <p class="of"></p>
-        <p class="cnm c">Разрешаем скриншот где можно а где нельзя</p>
-        <p class="cnm c">Разрешение на выбор любой папки в Files</p>
+        <p class="cnm c" onclick="d('disableflagsecure.apk')"><a href>Разрешаем скриншот где можно а где нельзя (Xposed)</a></p>
+        <p class="cnm c" onclick="d('nostoragerestrict.apk')"><a href>Разрешение на выбор любой папки в Files (Xposed)</a></p>
     </div>
+    <footer>
+        <p class="fntm">© 2024 Acelotick. Все права защищены.</p>
+    </footer>
 </body>
+<script>
+    let d=(file)=>{let a=document.createElement('a');a.href='./files/'+file;a.download=file;document.body.appendChild(a);a.click();document.body.removeChild(a)}
+</script>
 </html>
