@@ -1,5 +1,8 @@
 <!DOCTYPE html>
 <html lang="ru">
+
+
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,45 +21,61 @@
           "name": "Канура Acelotick'а",
           "alternateName": ["Канура", "Конура", "Канура Acelotick", "Конура Acelotick"],
           "url": "https://acelotick.github.io/pages/",
-          "potentialAction": [{
+          "potentialAction": {
             "@type": "SearchAction",
             "target": "https://acelotick.github.io/search?q={search_term_string}",
             "query-input": "required name=search_term_string"
-          }],
-          "mainEntity": [{
-            "@type": "Question",
-            "name": "Кто такой Acelotick?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "<p>Acelotick - Пользователь с гитхаба, начинающий программист Виталий Карпов, живущий в Казахстане</p>"
+          },
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Кто такой Acelotick?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "<p>Acelotick - Пользователь с гитхаба, начинающий программист Виталий Карпов, живёт в Казахстане и пишет программы на NodeJS включая прочие проекты, например сайты на Html, Css (Канура Acelotick'а)</p>"
+              }
+            },
+            {
+                "@type": "Question",
+                "name": "Как поставить root права используя twrp",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "<p>Чтобы получить root-права на вашем устройстве, выполните следующие шаги:</p><ol><li>Разблокируйте загрузчик вашего устройства в соответствии с инструкцией для вашей модели, доступной на 4pda или другом ресурсе.</li><li>Установите предварительно собранный архив SuperSU или Magisk для получения root-доступа. Рекомендуется использовать Magisk.</li><li>Скачайте и установите SDK Platform-Tools, включающие в себя инструменты fastboot и adb для работы с консолью.</li><li>Установите необходимые драйвера для вашего устройства. Например, для устройств с процессором MTK требуются драйверы MTK SP Drivers.</li><li>Скачайте и установите TWRP Recovery для вашего устройства с официального сайта производителя или сообщества разработчиков.</li><li>Перейдите в режим восстановления, нажав комбинацию клавиш громкость вниз и кнопка питания.</li><li>Прошейте файл recovery.img из скачанного архива, следуя инструкциям на сайте, где вы скачали TWRP, или используя специфическую инструкцию для вашего устройства.</li><li>После успешной прошивки перезагрузитесь в режим восстановления, нажав комбинацию клавиш громкость вверх и кнопка питания.</li><li>В TWRP найдите и выберите раздел 'Install'. Затем найдите архив с предустановленными правами SuperSU или Magisk и установите его.</li><li>Переместите ползунок для подтверждения установки архива с правами.</li><li>После успешной установки перезагрузите устройство.</li></ol><p>Теперь у вас есть root-доступ на вашем устройстве.</p>"
+                }
+            },
+            {
+              "@type": "WebPage",
+              "url": "https://acelotick.github.io/pages/kdp/",
+              "name": "Код да проги"
+            },
+            {
+              "@type": "WebPage",
+              "url": "https://acelotick.github.io/pages/github/magisk/",
+              "name": "Модули Magisk"
+            },
+            {
+              "@type": "WebPage",
+              "url": "https://acelotick.github.io/pages/wallpaperengine/",
+              "name": "Обои Wallpaper Engine"
+            },
+            {
+              "@type": "WebPage",
+              "url": "https://acelotick.github.io/pages/github/batch/",
+              "name": "Пакетные файлы для ПК"
+            },
+            {
+              "@type": "WebPage",
+              "url": "https://acelotick.github.io/pages/github/nodejs/",
+              "name": "Мною написанные программы"
+            },
+            {
+              "@type": "WebPage",
+              "url": "https://acelotick.github.io/pages/wallpaperengine/guide/",
+              "name": "Как поставить обои Wallpaper Engine"
             }
-          },{
-            "@type": "WebPage",
-            "url": "https://acelotick.github.io/pages/kdp/",
-            "name": "Код да проги"
-          },{
-            "@type": "WebPage",
-            "url": "https://acelotick.github.io/pages/github/magisk/",
-            "name": "Модули Magisk"
-          },{
-            "@type": "WebPage",
-            "url": "https://acelotick.github.io/pages/wallpaperengine/",
-            "name": "Обои Wallpaper Engine"
-          },{
-            "@type": "WebPage",
-            "url": "https://acelotick.github.io/pages/github/batch/",
-            "name": "Пакетные файлы для ПК"
-          },{
-            "@type": "WebPage",
-            "url": "https://acelotick.github.io/pages/github/nodejs/",
-            "name": "Мною написанные программы"
-          },{
-            "@type": "WebPage",
-            "url": "https://acelotick.github.io/pages/wallpaperengine/guide/",
-            "name": "Как поставить обои Wallpaper Engine"
-          }]
+          ]
         }
-        </script>
+    </script>    
 
     <link rel="apple-touch-icon-precomposed" href="./icons/icon.jpg">
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="./icons/icon144x144.jpg">
