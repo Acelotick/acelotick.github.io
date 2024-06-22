@@ -77,8 +77,8 @@
     }
 
     html {
-        background: #3d3d3d;
-        background-size: 100vw 200vh;
+        background: url('./photos/bg.jpg');
+        background-repeat: repeat;
     }
 
     body {
@@ -103,22 +103,35 @@
         padding-top: 20px;
     }
 
-    ::-webkit-scrollbar { width: 10px }
-    ::-webkit-scrollbar-corner { background-color: #f1f1f1 }
-    ::-webkit-scrollbar-thumb { background-color: #cccccc; border-radius: 4px }
-    ::-webkit-scrollbar-thumb:hover { background-color: #999999 }
-    ::-webkit-scrollbar-thumb:active { background-color: #888888 }
+    ::-webkit-scrollbar-corner { background-color: #925c5c }
     ::-webkit-scrollbar-button:start, ::-webkit-scrollbar-button:end { display: none }
+
+    ::-webkit-scrollbar {
+        width: 12px;
+        background: url('./photos/bg5.jpg');
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: url('./photos/bg32.jpg');
+        border-radius: 0;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+        background: url('./photos/bg25.jpg');
+    }
+
+    ::-webkit-scrollbar-thumb:active {
+        background: url('./photos/bg19.jpg');
+    }
 
     .proj {
         width: 40%;
-        border-radius: 3%;
+        border-radius: 16px 16px;
         background-image: url('./photos/1.png');
         box-shadow: 10px 10px 20px rgba(0, 10, 0, 0.5);
         margin-top: 20px;
         margin-right: 20px;
         transition: all ease-in-out 0.1s;
-        filter: blur(0.2px)
     }
 
     .proj:hover {
@@ -144,8 +157,16 @@
     .nline {
         display: inline-block;
     }
+
+    .dummy {
+        display: none;
+    }
 </style>
 <body>
+    <img src="./photos/bg5.jpg" alt="" class="dummy">
+    <img src="./photos/bg19.jpg" alt="" class="dummy">
+    <img src="./photos/bg25.jpg" alt="" class="dummy">
+    <img src="./photos/bg32.jpg" alt="" class="dummy">
     <p class="ntb">Обои для Wallpaper Engine от автора Acelotick</p>
     <p class="nt">Для скачивания или просмотра статьи, нажмите на любое из фото</p>
     <p style="padding-top: 20px"></p>
@@ -156,7 +177,9 @@
         <img src="./photos/WEGuide.jpg" onclick="window.location.href='./guide/index.html'" alt="guide how to change wallpaper to custom on wallpaper engine" class="proj">
         <img src="./photos/5.png" onclick="d('5.zip')" alt="women on car with clock" class="proj">
         <img src="./photos/1.png" onclick="d('1.zip')" alt="gray windows with digital clock" class="proj">
-        <img src="./photos/3.png" onclick="d('3.zip')" alt="digital clock on mars wallpaper" class="proj">
+        <img src="./photos/6.png" onclick="d('6.zip')" alt="women on car with clock" class="proj">
+        <img src="./photos/3.png" onclick="d('3.zip')" alt="women with clock" class="proj">
+        <img src="./photos/7.png" onclick="d('7.zip')" alt="spectrum particles" class="proj">
     </div>
     <p style="padding-top: 30px"></p>
     <footer>
