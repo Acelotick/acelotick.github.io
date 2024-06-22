@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://trusted.cdn.com;">
     <title>Модули Magisk</title>
 
     <link rel="preload" href="./index.css" as="style">
@@ -72,11 +71,11 @@
         <p class="ofb"></p>
         <p class="cnm b">Думаю, можно начать с модулей, сделанных пользователем Acelotick</p>
         <p class="of"></p>
-        <p class="cnm c" onclick="d('youtube-fix.zip')"><a href>Исправление лагов Youtube при 480p и выше</a></p>
-        <p class="cnm c" onclick="d('touch-boost.zip')"><a href>Ускоряем тач скрин одним модулем</a></p>
-        <p class="cnm c" onclick="d('camera-better.zip')"><a href>Делаем качество камеры выше и заметнее</a></p>
-        <p class="cnm c" onclick="d('gemini-support.zip')"><a href>Включаем поддержку Gemini для старых huawei</a></p>
-        <p class="cnm c" onclick="d('fast-booting.zip')"><a href>Ускорение загрузки в систему</a></p>
+        <p class="cnm c" id="ytf"><a href>Исправление лагов Youtube при 480p и выше</a></p>
+        <p class="cnm c" id="tb"><a href>Ускоряем тач скрин одним модулем</a></p>
+        <p class="cnm c" id="cb"><a href>Делаем качество камеры выше и заметнее</a></p>
+        <p class="cnm c" id="gs""><a href>Включаем поддержку Gemini для старых huawei</a></p>
+        <p class="cnm c" id="fb"><a href>Ускорение загрузки в систему</a></p>
         <p class="ofm"></p>
         <p class="cndb g">Списки</p>
         <p class="cnd e"><a href="./changebrand/index.html">Изменение бренда телефона</a></p>
@@ -85,8 +84,8 @@
         <p class="ofm"></p>
         <p class="cnm b">Продолжим с другими модулями, не от автора</p>
         <p class="of"></p>
-        <p class="cnm c e" onclick="d('disableflagsecure.apk')"><a href>Разрешаем скриншот где можно а где нельзя (Xposed)</a></p>
-        <p class="cnm c e" onclick="d('nostoragerestrict.apk')"><a href>Разрешение на выбор любой папки в Files (Xposed)</a></p>
+        <p class="cnm c e" id="dfs"><a href>Разрешаем скриншот где можно а где нельзя (Xposed)</a></p>
+        <p class="cnm c e" id="nsr"><a href>Разрешение на выбор любой папки в Files (Xposed)</a></p>
         <p class="ofb"></p>
         <footer>
             <p class="cnm">© 2024 Acelotick. Все права защищены.</p>
