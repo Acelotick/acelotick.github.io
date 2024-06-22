@@ -3,9 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://trusted.cdn.com;">
+    <title>Пакетные файлы для Windows!</title>
+
+    <link rel="preload" href="./index.css" as="style">
+    <link rel="preload" href="./index.js" as="script">
 </head>
+<link rel="stylesheet" href="./index.css">
 <body>
     <p style="font-size: larger;">Скоро!</p>
 </body>
 </html>
+<script src="./index.js"></script>
