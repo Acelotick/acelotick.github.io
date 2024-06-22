@@ -1,0 +1,112 @@
+@font-face {
+    font-family: 'nt';
+    src: url('../../fonts/nt.ttf') format('opentype');
+}
+
+.nt {
+    font-family: 'nt', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 19px;
+}
+
+@font-face {
+    font-family: 'ntb';
+    src: url('../../fonts/ntb.ttf') format('opentype');
+}
+
+.ntb {
+    font-family: 'ntb', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 25px;
+}
+
+html {
+    background: url('./photos/bg.jpg');
+    background-repeat: repeat;
+}
+
+body {
+    margin: 2%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    color: #f1f1f1;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.ob {
+    padding-top: 30px;
+}
+
+.om {
+    padding-top: 20px;
+}
+
+::-webkit-scrollbar-corner {
+    background-color: #925c5c;
+}
+
+::-webkit-scrollbar-button:start,
+::-webkit-scrollbar-button:end {
+    display: none;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+    background: url('./photos/bg5.jpg');
+}
+
+::-webkit-scrollbar-thumb {
+    background: url('./photos/bg32.jpg');
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: url('./photos/bg25.jpg');
+}
+
+::-webkit-scrollbar-thumb:active {
+    background: url('./photos/bg19.jpg');
+}
+
+.proj {
+    width: 40%;
+    border-radius: 16px 16px;
+    background-image: url('./photos/1.png');
+    box-shadow: 10px 10px 20px rgba(0, 10, 0, 0.5);
+    margin-top: 20px;
+    margin-right: 20px;
+    transition: all ease-in-out 0.1s;
+    filter: blur(0px);
+}
+
+.proj:hover {
+    scale: 0.99;
+    filter: brightness(95%);
+}
+
+.proj:active {
+    filter: brightness(90%);
+}
+
+@media (orientation: portrait) {
+    .proj {
+        width: 95%;
+        display: block;
+        margin-left: 2.3%;
+    }
+    .c {
+        padding-left: 2px;
+    }
+}
+
+.nline {
+    display: inline-block;
+}
+
+.dummy {
+    display: none;
+}

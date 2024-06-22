@@ -1,0 +1,113 @@
+@font-face {
+    font-family: 'nt';
+    src: url('./fonts/nt.ttf') format('opentype');
+}
+
+.fnt {
+    font-family: 'nt', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+@font-face {
+    font-family: 'ntm';
+    src: url('./fonts/ntm.ttf') format('opentype');
+}
+
+.fntm {
+    font-family: 'ntm', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+@font-face {
+    font-family: 'ntb';
+    src: url('./fonts/ntb.ttf') format('opentype');
+}
+
+.fntb {
+    font-family: 'ntb', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    padding-left: 1vw;
+    border: none;
+    font-size: 20px;
+    scroll-behavior: smooth;
+    scroll-padding: 50px;
+}
+
+html {
+    background-color: #181818;
+}
+
+* {
+    margin: 0;
+    padding-left: 0.6vw;
+    padding-right: 0.6vw;
+    padding-top: 0.4vh;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.offset {
+    position: relative;
+    margin: 25px;
+}
+
+a {
+    color: #00cc99;
+    padding: 0;
+    padding-left: 0.2vw;
+}
+
+a:hover {
+    color: #009977;
+}
+
+a:visited {
+    color: #66ffcc;
+}
+
+a:visited:hover {
+    color: #00d7a8;
+}
+
+p {
+    color: #e0e0e0;
+}
+
+.bigt {
+    font-size: 38px;
+    margin-left: -1vw;
+}
+
+footer {
+    padding: 0;
+}
+
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-corner {
+    background-color: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #cccccc;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #999999;
+}
+
+::-webkit-scrollbar-thumb:active {
+    background-color: #888888;
+}
+
+::-webkit-scrollbar-button:start, ::-webkit-scrollbar-button:end {
+    display: none;
+}

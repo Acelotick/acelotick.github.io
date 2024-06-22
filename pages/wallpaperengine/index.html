@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://trusted.cdn.com;">
     <title>Проекты Wallpaper Engine Acelotick'а</title>
 
     <meta name="description" content="Здесь ты можешь скачать обои для своего Wallpaper Engine, и даже сам Wallpaper Engi..">
@@ -61,108 +62,7 @@
 
     <meta name="keywords" content="acelotick, acelot, dfkgfgth, ty;by, j,jb, free, for, use, without, wo, license, lic, mit, isc, unlicensed, freeproject, project, проект, без, лицензии, мит, иск, нелицензионный, простой, тянка, аниме часы, digital, clock, anime, tyan, tan, simple, acelotic, acelotik, aceloti, ацелотик, аселотик, аселот, ацелот, ацелотис, аселотик, асело, ацело, обои, валпепер, енжин, валпапер, валпаперс, енгине, енжина, валпапера, wallpaper, wallpapers, wall, engine, engines, wallpapes, walpapper, walpappe, walpappers, walpappes, обои, для, твоего, wallpaper, engine, скачать, бесплатно, кряк, crack, free, download, быстро, просто, just, fast, без вирусов, без смс, и, регистрации, для windows, without virus, without sms, and, registration, for windows">
 </head>
-<style>
-    @font-face { font-family: 'nt'; src: url('../../fonts/nt.ttf') format('opentype') }
-
-    .nt {
-        font-family: 'nt', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        font-size: 19px;
-    }
-    
-    @font-face { font-family: 'ntb'; src: url('../../fonts/ntb.ttf') format('opentype') }
-
-    .ntb {
-        font-family: 'ntb', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        font-size: 25px;
-    }
-
-    html {
-        background: url('./photos/bg.jpg');
-        background-repeat: repeat;
-    }
-
-    body {
-        margin: 2%
-    }
-
-    * {
-        margin: 0;
-        padding: 0;
-        color: #f1f1f1;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        -ms-user-select: none;
-        user-select: none
-    }
-
-    .ob {
-        padding-top: 30px;
-    }
-
-    .om {
-        padding-top: 20px;
-    }
-
-    ::-webkit-scrollbar-corner { background-color: #925c5c }
-    ::-webkit-scrollbar-button:start, ::-webkit-scrollbar-button:end { display: none }
-
-    ::-webkit-scrollbar {
-        width: 12px;
-        background: url('./photos/bg5.jpg');
-    }
-
-    ::-webkit-scrollbar-thumb {
-        background: url('./photos/bg32.jpg');
-        border-radius: 5px;
-    }
-
-    ::-webkit-scrollbar-thumb:hover {
-        background: url('./photos/bg25.jpg');
-    }
-
-    ::-webkit-scrollbar-thumb:active {
-        background: url('./photos/bg19.jpg');
-    }
-
-    .proj {
-        width: 40%;
-        border-radius: 16px 16px;
-        background-image: url('./photos/1.png');
-        box-shadow: 10px 10px 20px rgba(0, 10, 0, 0.5);
-        margin-top: 20px;
-        margin-right: 20px;
-        transition: all ease-in-out 0.1s;
-        filter: blur(0px)
-    }
-
-    .proj:hover {
-        scale: 0.99;
-        filter: brightness(95%)
-    }
-
-    .proj:active {
-        filter: brightness(90%)
-    }
-
-    @media (orientation: portrait) {
-        .proj {
-            width: 95%;
-            display: block;
-            margin-left: 2.3%
-        }
-        .c {
-            padding-left: 2px;
-        }
-    }
-
-    .nline {
-        display: inline-block;
-    }
-
-    .dummy {
-        display: none;
-    }
-</style>
+<link rel="stylesheet" href="./index.css">
 <body>
     <img src="./photos/bg.jpg" alt="" class="dummy">
     <img src="./photos/bg5.jpg" alt="" class="dummy">
@@ -190,7 +90,5 @@
     </footer>
     <p style="padding-top: 10px"></p>
 </body>
-<script>
-    let d=(file)=>{let a=document.createElement('a');a.href='./files/'+file;a.download=file;document.body.appendChild(a);a.click();document.body.removeChild(a)}
-</script>
+<script src="./index.js"></script>
 </html>
