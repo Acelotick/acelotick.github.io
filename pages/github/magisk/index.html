@@ -61,6 +61,19 @@
     <meta name="twitter:image" content="./icons/icon.jpg">
 </head>
 <style>
+    ::-webkit-scrollbar { width: 10px }
+
+    ::-webkit-scrollbar-thumb { 
+        background-color: #87ffe5; 
+        border-radius: 4px 
+    }
+
+    ::-webkit-scrollbar-thumb:hover { background-color: #64dec9 }
+
+    ::-webkit-scrollbar-thumb:active { background-color: #53b099 }
+
+    ::-webkit-scrollbar-button:start, ::-webkit-scrollbar-button:end { display: none }
+    
     html {
         background: #009788;
     }
@@ -70,13 +83,14 @@
         margin: 6%;
         margin-bottom: 0;
         padding: 1%;
-        border-radius: 10px 10px 0 0;
-        height: 100vh
+        border-radius: 10px 10px 10px 10px;
+        height: auto
     }
     
     body {
         padding: 0;
-        margin: 0
+        margin: 0;
+        padding-bottom: 6%;
     }
 
     * {
@@ -88,7 +102,6 @@
     .cndb {
         font-family: 'cndbold', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         font-size: 31px;
-        font-weight: 700;
         padding-bottom: 0.5%;
     }
 
@@ -107,7 +120,6 @@
 
     .b {
         font-family: 'cndbold';
-        font-weight: 600;
         margin-left: -0.05%;
     }
 
@@ -145,10 +157,32 @@
         text-decoration: none;
         color: #a4ffed
     }
+
+    @media (orientation: portrait) {
+        .main {
+            padding: 2%
+        }
+        .ofm {
+            padding-top: 10%;
+        }
+        .of {
+            padding-top: 1%;
+        }
+        .ofb {
+            padding-top: 11%;
+        }
+        .g {
+            margin-left: -0.5%
+        }
+        .e {
+            margin-left: 0.8%
+        }
+    }
 </style>
 <body>
     <div class="main">
         <footer class="cndb">Модули Magisk'а на любой вкус и цвет</footer>
+        <p class="of"></p>
         <p class="cnd">Ну здравствуй, данное место, как-бы сказать, тут ты найдёшь модули для твоего рутированного устройства android который использует magisk, на любой вкус, цвет, оттенок и прозрачность, есть также модули от автора, только фаворитные и проверенные</p>
         <p class="ofb"></p>
         <p class="cnm b">Думаю, можно начать с модулей, сделанных пользователем Acelotick</p>
@@ -159,19 +193,20 @@
         <p class="cnm c" onclick="d('gemini-support.zip')"><a href>Включаем поддержку Gemini для старых huawei</a></p>
         <p class="cnm c" onclick="d('fast-booting.zip')"><a href>Ускорение загрузки в систему</a></p>
         <p class="ofm"></p>
-        <p class="cndb">Списки</p>
-        <p class="cnd"><a href="./changebrand/index.html">Изменение бренда телефона</a></p>
-        <p class="cnd"><a href="./changemodel/index.html">Изменение модели</a></p>
-        <p class="cnd"><a href="./changeregion/index.html">Меняем регион SIM-Карты</a></p>
+        <p class="cndb g">Списки</p>
+        <p class="cnd e"><a href="./changebrand/index.html">Изменение бренда телефона</a></p>
+        <p class="cnd e"><a href="./changemodel/index.html">Изменение модели</a></p>
+        <p class="cnd e"><a href="./changeregion/index.html">Меняем регион SIM-Карты</a></p>
         <p class="ofm"></p>
         <p class="cnm b">Продолжим с другими модулями, не от автора</p>
         <p class="of"></p>
-        <p class="cnm c" onclick="d('disableflagsecure.apk')"><a href>Разрешаем скриншот где можно а где нельзя (Xposed)</a></p>
-        <p class="cnm c" onclick="d('nostoragerestrict.apk')"><a href>Разрешение на выбор любой папки в Files (Xposed)</a></p>
+        <p class="cnm c e" onclick="d('disableflagsecure.apk')"><a href>Разрешаем скриншот где можно а где нельзя (Xposed)</a></p>
+        <p class="cnm c e" onclick="d('nostoragerestrict.apk')"><a href>Разрешение на выбор любой папки в Files (Xposed)</a></p>
+        <p class="ofb"></p>
+        <footer>
+            <p class="cnm">© 2024 Acelotick. Все права защищены.</p>
+        </footer>
     </div>
-    <footer>
-        <p class="fntm">© 2024 Acelotick. Все права защищены.</p>
-    </footer>
 </body>
 <script>
     let d=(file)=>{let a=document.createElement('a');a.href='./files/'+file;a.download=file;document.body.appendChild(a);a.click();document.body.removeChild(a)}
