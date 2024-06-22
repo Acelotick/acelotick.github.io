@@ -113,7 +113,7 @@
 
     ::-webkit-scrollbar-thumb {
         background: url('./photos/bg32.jpg');
-        border-radius: 0;
+        border-radius: 5px;
     }
 
     ::-webkit-scrollbar-thumb:hover {
@@ -132,15 +132,16 @@
         margin-top: 20px;
         margin-right: 20px;
         transition: all ease-in-out 0.1s;
+        filter: blur(0px)
     }
 
     .proj:hover {
         scale: 0.99;
-        filter: brightness(95%) blur(0px);
+        filter: brightness(95%)
     }
 
     .proj:active {
-        filter: blur(0) brightness(90%)
+        filter: brightness(90%)
     }
 
     @media (orientation: portrait) {
