@@ -111,3 +111,8 @@ footer {
 ::-webkit-scrollbar-button:start, ::-webkit-scrollbar-button:end {
     display: none;
 }
+
+h2 {
+    padding: 0;
+    margin: 0;
+}
