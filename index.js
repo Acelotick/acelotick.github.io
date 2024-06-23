@@ -91,3 +91,6 @@ let generate = () => {
     }
     if (d) n++
 }
+document.getElementById('fun-fact').onclick = function() {
+    generate()
+}
