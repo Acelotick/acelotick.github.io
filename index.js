@@ -69,28 +69,29 @@ let facts = [
     "Муравьи стали земляными инженерами. Вот уже 55 миллионов лет их конструкции неизменны.",
     "Для воспитания птенцов жирафы никогда не ложатся.",
     "Жирафы не могут оборачивать голову из-за длинной шеи.",
-    "Наука знает больше 6000 языков.",
-]
+    "Наука знает больше 6000 языков."
+];
+
 let n = 0
-let d = 0
-let generate = () => {
-    let fact = document.getElementById('fun-fact')
+let d = 0;
+
+let gen = () => {
+    let fact = document.getElementById('fun-fact');
     if (n == 0 && n < 5) {
-        fact.textContent = 'Забавный факт загружается..'
+        fact.textContent = 'Забавный факт загружается..';
         setTimeout(() => {
-            fact.textContent = facts[Number((Math.random() * facts.length).toFixed(0))] ?? 'Ошибка при генерации, тебе повезло!'
-            d++
-        }, Math.random() * 1000)
-        n++
+            fact.textContent = facts[Number((Math.random() * facts.length).toFixed(0))] ?? 'Ошибка при генерации, тебе повезло!';
+            d++;
+        }, Math.random() * 1000);
+        n++;
     } else if (n > 5 && n <= 8) {
-        fact.textContent = 'Перестаньте кликать на меня!'
+        fact.textContent = 'Перестаньте кликать на меня!';
     } else if (n > 8 && n <= 10) {
-        fact.textContent = 'Так и быть, я сдаюсь!'
+        fact.textContent = 'Так и быть, я сдаюсь!';
     } else if (n > 10) {
-        fact.style.display = 'none'
-    }
-    if (d) n++
-}
-document.getElementById('fun-fact').onclick = function() {
-    generate()
-}
+        fact.style.display = 'none';
+    };
+    if (d) n++;
+};
+
+document.getElementById('fun-fact').onclick = (() => gen());
