@@ -28,7 +28,7 @@
 body, html {
     margin: 0;
     padding: 0;
-    padding-left: 1vw;
+    padding-left: 0.5%;
     border: none;
     font-size: 20px;
     scroll-behavior: smooth;
@@ -36,7 +36,9 @@ body, html {
 }
 
 html {
-    background-color: #181818;
+    background: url('./photos/bg.jpg');
+    background-repeat: repeat;
+    background-size: cover;
 }
 
 * {
@@ -89,10 +91,7 @@ footer {
 
 ::-webkit-scrollbar {
     width: 10px;
-}
-
-::-webkit-scrollbar-corner {
-    background-color: #f1f1f1;
+    background: url('./photos/bg.jpg');
 }
 
 ::-webkit-scrollbar-thumb {
