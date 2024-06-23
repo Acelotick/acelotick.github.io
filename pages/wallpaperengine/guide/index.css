@@ -74,8 +74,7 @@ img {
     background-color: #888888;
 }
 
-::-webkit-scrollbar-button:start,
-::-webkit-scrollbar-button:end {
+::-webkit-scrollbar-button {
     display: none;
 }
 

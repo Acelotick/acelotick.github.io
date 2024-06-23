@@ -1,22 +1,18 @@
 <!DOCTYPE html>
-<html lang="ru en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Модули Magisk</title>
-
-    <link rel="preload" href="./index.css" as="style">
-    <link rel="preload" href="./index.js" as="script">
+    
     <meta name="keywords" content="acelotick, acelot, ацелотик, ацело, ацелотикк, модули, магиск, махиск, как, установить, рут, права, magisk, modules, module, how, to, install, root, supersu, su, sudo, суперпользователь, суперпользователя, superuser, superсу, су, доступ, к, снимкам, ускорение, тач, скрина, скрин, ускорять, быстрее, быстро, быстрый, экран, fast, speeding, speed, touch, screen, photos, overclock, over, clock, clocking, разгон, перегоз, цпу, гпу, цп, гп, озу, рам, ram, rom, cpu, gpu, cp, gp, ozu">
-
-    <noscript>Your application does not support JavaScript</noscript>
     
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
         "@type": "WebSite",
         "name": "Модули Magisk",
-        "alternateName": ["Magisk Модули", "Magisk Files", "Magisk module"],
+        "alternateName": ["Magisk-M", "MM", "M-M"],
         "url": "https://acelotick.github.io/pages/github/magisk/"
       }
     </script>
@@ -29,12 +25,12 @@
     <link rel="icon" type="image/jpeg" sizes="228x228" href="./icons/icon228x228.jpg">
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="./icons/icon144x144.jpg">
-    <meta name="application-name" content="Модули Magisk"/>
-    <meta name="msapplication-TileColor" content="#2b5797"/>
-    <meta name="msapplication-square70x70logo" content="./icons/icon70x70.jpg"/>
-    <meta name="msapplication-square150x150logo" content="./icons/icon150x150.jpg"/>
-    <meta name="msapplication-wide310x150logo" content="./icons/icon310x150.jpg"/>
-    <meta name="msapplication-square310x310logo" content="./icons/icon/icon310x310.jpg"/>
+    <meta name="application-name" content="Модули Magisk">
+    <meta name="msapplication-TileColor" content="#2b5797">
+    <meta name="msapplication-square70x70logo" content="./icons/icon70x70.jpg">
+    <meta name="msapplication-square150x150logo" content="./icons/icon150x150.jpg">
+    <meta name="msapplication-wide310x150logo" content="./icons/icon310x150.jpg">
+    <meta name="msapplication-square310x310logo" content="./icons/icon/icon310x310.jpg">
     <link rel="yandex-tableau-widget" href="./xmls/yandex.json">
     <link rel="mask-icon" href="./icons/icon.svg" color="#5bbad5">
     <meta name="msapplication-config" content="./xmls/browser.xml">
@@ -61,9 +57,14 @@
     <meta name="twitter:title" content="Модули Magisk">
     <meta name="twitter:description" content="Тут ты найдешь модули которые рекомендует Acelotick, и также создаёт их">
     <meta name="twitter:image" content="./icons/icon.jpg">
+
+    <link rel="stylesheet" href="./index.css">
 </head>
-<link rel="stylesheet" href="./index.css">
 <body>
+    <noscript>
+        <p>Для отображения сайта включите поддержку JavaScript.</p>
+    </noscript>
+    
     <div class="main">
         <footer class="cndb">Модули Magisk'а на любой вкус и цвет</footer>
         <p class="of"></p>
@@ -71,26 +72,29 @@
         <p class="ofb"></p>
         <p class="cnm b">Думаю, можно начать с модулей, сделанных пользователем Acelotick</p>
         <p class="of"></p>
-        <p class="cnm c" id="ytf"><a href>Исправление лагов Youtube при 480p и выше</a></p>
-        <p class="cnm c" id="tb"><a href>Ускоряем тач скрин одним модулем</a></p>
-        <p class="cnm c" id="cb"><a href>Делаем качество камеры выше и заметнее</a></p>
-        <p class="cnm c" id="gs""><a href>Включаем поддержку Gemini для старых huawei</a></p>
-        <p class="cnm c" id="fb"><a href>Ускорение загрузки в систему</a></p>
+        <p class="cnm c"><a onclick="d('youtube-fix.zip')">Исправление лагов Youtube при 480p и выше</a></p>
+        <p class="cnm c"><a onclick="d('touch-boost.zip')">Ускоряем тач скрин одним модулем</a></p>
+        <p class="cnm c"><a onclick="d('camera-better.zip')">Делаем качество камеры выше и заметнее</a></p>
+        <p class="cnm c"><a onclick="d('gemini-support.zip')">Включаем поддержку Gemini для старых huawei</a></p>
+        <p class="cnm c"><a onclick="d('fast-booting.zip')">Ускорение загрузки в систему</a></p>
         <p class="ofm"></p>
         <p class="cndb g">Списки</p>
-        <p class="cnd e"><a href="./changebrand/index.html">Изменение бренда телефона</a></p>
-        <p class="cnd e"><a href="./changemodel/index.html">Изменение модели</a></p>
-        <p class="cnd e"><a href="./changeregion/index.html">Меняем регион SIM-Карты</a></p>
+        <p class="cnm c"><a onclick="window.location.href='./changebrand/index.html'">Изменение бренда телефона</a></p>
+        <p class="cnm c"><a onclick="window.location.href='./changemodel/index.html'">Изменение модели</a></p>
+        <p class="cnm c"><a onclick="window.location.href='./changeregion/index.html'">Меняем регион SIM-Карты</a></p>
         <p class="ofm"></p>
-        <p class="cnm b">Продолжим с другими модулями, не от автора</p>
+        <p class="cnm b">Продолжим с другими модулями, не от Acelotick'а</p>
         <p class="of"></p>
-        <p class="cnm c e" id="dfs"><a href>Разрешаем скриншот где можно а где нельзя (Xposed)</a></p>
-        <p class="cnm c e" id="nsr"><a href>Разрешение на выбор любой папки в Files (Xposed)</a></p>
+        <p class="cnm c e"><a onclick="d('disableflagsecure.apk')">Разрешаем скриншот где можно а где нельзя (Xposed)</a></p>
+        <p class="cnm c e"><a onclick="d('nostoragerestrict.apk')">Разрешение на выбор любой папки в Files (Xposed)</a></p>
         <p class="ofb"></p>
         <footer>
             <p class="cnm">© 2024 Acelotick. Все права защищены.</p>
         </footer>
     </div>
+
+    <script>
+        let d=(file)=>{let a=document.createElement('a');a.href='./files/'+file;a.download=file;document.body.appendChild(a);a.click();document.body.removeChild(a)}
+    </script>
 </body>
-<script src="./index.js"></script>
 </html>

@@ -1,27 +1,7 @@
-::-webkit-scrollbar {
-    width: 10px;
-}
-
-::-webkit-scrollbar-thumb {
-    background-color: #87ffe5;
-    border-radius: 4px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-    background-color: #64dec9;
-}
-
-::-webkit-scrollbar-thumb:active {
-    background-color: #53b099;
-}
-
-::-webkit-scrollbar-button:start,
-::-webkit-scrollbar-button:end {
-    display: none;
-}
-
 html {
-    background: #009788;
+    background: url('./photos/bg.jpg');
+    background-size: cover;
+    background-repeat: repeat;
 }
 
 .main {
@@ -29,7 +9,7 @@ html {
     margin: 6%;
     margin-bottom: 0;
     padding: 1%;
-    border-radius: 10px;
+    border-radius: 10px 10px 0 0;
     height: 100%;
 }
 
@@ -107,19 +87,46 @@ a {
     .main {
         padding: 2%;
     }
+
     .ofm {
         padding-top: 10%;
     }
+
     .of {
         padding-top: 1%;
     }
+
     .ofb {
         padding-top: 11%;
     }
+
     .g {
         margin-left: -0.5%;
     }
+
     .e {
         margin-left: 0.8%;
     }
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    background: url('./photos/bg.jpg');
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #79f1af;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #69d197;
+}
+
+::-webkit-scrollbar-thumb:active {
+    background-color: #60c18c;
+}
+
+::-webkit-scrollbar-button {
+    display: none;
 }
