@@ -5,7 +5,7 @@ html {
 }
 
 .main {
-    background: #00342e;
+    background: #00342ea2;
     margin: 6%;
     margin-bottom: 0;
     padding: 1%;
@@ -84,6 +84,22 @@ a {
 }
 
 @media (orientation: portrait) {
+    .cndb {
+        font-size: 26px;
+    }
+
+    .cnd {
+        margin-left: 2%;
+    }
+
+    .c {
+        margin-left: 2%;
+    }
+
+    .b {
+        margin-left: 0.5%
+    }
+
     .main {
         padding: 2%;
     }
@@ -93,7 +109,7 @@ a {
     }
 
     .of {
-        padding-top: 1%;
+        padding-top: 2%;
     }
 
     .ofb {
