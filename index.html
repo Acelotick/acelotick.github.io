@@ -15,8 +15,10 @@
 
             setTimeout(() => {
             try {
+                button.click()
                 audio.play();
             } catch {
+                button.click()
                 button.style.display = 'block';
                 
                 button.addEventListener('click', () => {
