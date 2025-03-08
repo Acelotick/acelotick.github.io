@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Автовоспроизведение</title>
+</head>
+<body>
+    <audio id="player" src="./228.mp3" autoplay></audio>
+    <button id="playButton" style="display:none;">Нажми для воспроизведения</button>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const audio = document.getElementById('player');
+            const button = document.getElementById('playButton');
+            
+            audio.play().catch(() => {
+                console.log('Автовоспроизведение заблокировано. Требуется действие пользователя.');
+                button.style.display = 'block';
+                button.addEventListener('click', () => {
+                    audio.play();
+                    button.style.display = 'none';
+                });
+                setTimeout(() => button.click(), 250);
+            });
+        });
+    </script>
+</body>
+</html>
