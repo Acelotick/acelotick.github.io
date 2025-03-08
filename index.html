@@ -7,21 +7,26 @@
 </head>
 <body>
     <audio id="player" src="./228.mp3" autoplay></audio>
-    <button id="playButton" style="display:none;">да всоси хуй самочка</button>
+    <button id="playButton" style="display:none;"></button>
     <script>
         document.addEventListener('DOMContentLoaded', () => {
             const audio = document.getElementById('player');
             const button = document.getElementById('playButton');
-            
-            audio.play().catch(() => {
-                console.log('Автовоспроизведение заблокировано. Требуется действие пользователя.');
+
+            setTimeout(() => {
+            try {
+                audio.play();
+            } catch {
                 button.style.display = 'block';
+                
                 button.addEventListener('click', () => {
                     audio.play();
                     button.style.display = 'none';
                 });
+                
                 setTimeout(() => button.click(), 250);
-            });
+            }
+            }, 500);
         });
     </script>
 </body>
